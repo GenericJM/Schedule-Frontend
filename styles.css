@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+td,th {
+    border: solid 1px black;
+    font-size: 2em;
+    text-align: center;
+}
+td{
+    position: relative;
+}
+td:hover,.hour:hover {
+   
+    cursor: pointer;
+}
+.deleteButton{ 
+     display:none;
+  position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    background-color: transparent;
+    border-color: transparent;
+    color: red;        
+}
+td:hover .deleteButton{
+display: block;
+}
+.hide{
+    display: none;
+}
